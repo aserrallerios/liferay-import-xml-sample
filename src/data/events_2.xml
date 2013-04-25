@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<events updatedEventID="927" command="edit">
+  <event>
+    <event_id>89</event_id>
+    <title>FTTH Council</title>
+    <date>02/11/2009</date>
+    <date_to>02/12/2009</date_to>
+    <category_id>2</category_id>
+    <description>Copenhague.
+      Conferencia de alto nivel que bajo el título &quot;Construir un futuro
+      sostenible&quot; cita a los actores más destacados del sector de las
+      telecomunicaciones.
+      Participa el consejero de la CMT Albert Martí.
+    </description>
+    <url>http://www1.cmt.es/intranet/docs/age/1252587003_fthh am.zip</url>
+    <target>my_window</target>
+  </event>
+</events>
