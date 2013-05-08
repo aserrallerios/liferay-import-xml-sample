@@ -732,7 +732,7 @@ public class ImportadorIntranet {
             ImportadorIntranet.articleService.addArticle(groupId, 0l, 0l, "",
                     true, new String[] { "es_ES" }, new String[] { titulo },
                     new String[] {}, new String[] {}, XMLReaderWriter
-                            .getReaderWriter().toXML(root), "General",
+                            .getReaderWriter().toXML(root), "general",
                     structureNovedades.getStructureId(), templateNovedades
                             .getTemplateId(), "", cal.get(Calendar.MONTH), cal
                             .get(Calendar.DATE), cal.get(Calendar.YEAR), cal
@@ -890,7 +890,7 @@ public class ImportadorIntranet {
                                     new String[] {},
                                     new String[] {},
                                     XMLReaderWriter.getReaderWriter().toXML(
-                                            root), "General",
+                                            root), "general",
                                     structure2level.getStructureId(),
                                     template2level.getTemplateId(), "", 1, 1,
                                     2013, 0, 0, 0, 0, 0, 0, 0, true, 0, 0, 0,
@@ -916,7 +916,7 @@ public class ImportadorIntranet {
                                 new String[] { articleTitle }, new String[] {},
                                 new String[] {}, XMLReaderWriter
                                         .getReaderWriter().toXML(root),
-                                "General", structure2level.getStructureId(),
+                                "general", structure2level.getStructureId(),
                                 template2level.getTemplateId(), "", 1, 1, 2013,
                                 0, 0, 0, 0, 0, 0, 0, true, 0, 0, 0, 0, 0, true,
                                 true, null, context);
@@ -1005,7 +1005,7 @@ public class ImportadorIntranet {
                                     new String[] {},
                                     new String[] {},
                                     XMLReaderWriter.getReaderWriter().toXML(
-                                            root), "General",
+                                            root), "general",
                                     structure3level.getStructureId(),
                                     template3level.getTemplateId(), "", 1, 1,
                                     2013, 0, 0, 0, 0, 0, 0, 0, true, 0, 0, 0,
@@ -1031,7 +1031,7 @@ public class ImportadorIntranet {
                                 new String[] { articleTitle }, new String[] {},
                                 new String[] {}, XMLReaderWriter
                                         .getReaderWriter().toXML(root),
-                                "General", structure3level.getStructureId(),
+                                "general", structure3level.getStructureId(),
                                 template3level.getTemplateId(), "", 1, 1, 2013,
                                 0, 0, 0, 0, 0, 0, 0, true, 0, 0, 0, 0, 0, true,
                                 true, null, context);
@@ -1268,13 +1268,13 @@ public class ImportadorIntranet {
     public static void main(final String[] args) throws Exception {
         ImportadorIntranet.cargarPropiedades();
         ImportadorIntranet.startWSClients();
-        // ImportadorIntranet.getStructuresAndTemplates();
+        ImportadorIntranet.getStructuresAndTemplates();
         // ImportadorIntranet.getCategories();
         // ImportadorIntranet.crearPaginasIntranet();
-        // getTags();
-        // crearNovedadesIntranet();
+        ImportadorIntranet.getTags();
+        ImportadorIntranet.crearNovedadesIntranet();
         // cargarGlosario();
-        ImportadorIntranet.cargarEventos();
+        // ImportadorIntranet.cargarEventos();
     }
 
     static void startWSClients() throws MalformedURLException, ServiceException {
